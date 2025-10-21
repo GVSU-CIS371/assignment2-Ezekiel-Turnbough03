@@ -7,7 +7,6 @@
     color: string;
   };
   const props = defineProps<Props>();
-  
 </script>
 
 <style lang="scss" scoped>
@@ -18,6 +17,5 @@
   height: 20%;
   animation: pour-tea 2s 1s forwards;
   z-index: 2;
-  transition: background-color 0.5s ease; /* smooth color transition */
 }
 </style>
