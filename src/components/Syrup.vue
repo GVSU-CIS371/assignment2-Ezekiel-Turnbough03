@@ -1,11 +1,9 @@
 <template>
-  <div class="syrup" :style="{ backgroundColor: color }"></div>
+  <div class="syrup" :style="{ backgroundColor: props.color }"></div>
 </template>
 
 <script setup lang="ts">
-  type Props = {
-    color: string;
-  };
+  type Props = { color: string };
   const props = defineProps<Props>();
 </script>
 
