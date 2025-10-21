@@ -1,12 +1,15 @@
 <template>
-  <div class="syrup"></div>
+  <div class="syrup" :style="{ backgroundColor: props.color }"></div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  type Props = { color: string };
+  const props = defineProps<Props>();
+</script>
+
 <style lang="scss" scoped>
 .syrup {
   transform: translateY(400%);
-  background-color: #c6c6c6;
   position: relative;
   width: 100%;
   height: 20%;
